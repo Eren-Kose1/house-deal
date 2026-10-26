@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>HouseDeal: house rules your whole flat agreed on</title>
+  <meta name="description" content="A chore rota, kind nudges and house rules that everyone in a shared flat agrees on, with a check-in so rules don't quietly fade.">
+  <meta name="theme-color" content="#17232c">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 15 16 5l12 10v13H4z' fill='%2317232c'/%3E%3Cpath d='m10 19 4 4 8-9' fill='none' stroke='%23f4c542' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M4 15 16 5l12 10v13H4z" fill="currentColor" />
+          <path d="m10 19 4 4 8-9" fill="none" class="brand-tick" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <div>
+          <p class="brand-name">HouseDeal</p>
+          <p class="brand-flat">Flat 3B, Weserstraße 12</p>
+        </div>
+      </div>
+      <p class="today" id="today"></p>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <noscript><p class="card">HouseDeal needs JavaScript to run.</p></noscript>
+    </main>
+
+    <nav class="tabbar" aria-label="Main">
+      <a class="tab" href="#/week" data-tab="week">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10" /></svg>
+        This week
+      </a>
+      <a class="tab" href="#/rules" data-tab="rules">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l3 3v15H6z" /><path d="m9 13 2 2 4-4" /></svg>
+        Rules
+        <span class="tab-badge" id="rules-badge" hidden></span>
+      </a>
+      <a class="tab" href="#/flat" data-tab="flat">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 4l9 7v9H3z" /><path d="M10 20v-5h4v5" /></svg>
+        Flat
+      </a>
+    </nav>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+      <span id="toast-text"></span>
+      <button type="button" class="toast-action" id="toast-action" hidden></button>
+    </div>
+  </div>
+</body>
+</html>
