@@ -1,6 +1,6 @@
 # HouseDeal
 
-House rules your whole flat agreed on: a chore rota, kind nudges and a check-in so rules don't quietly fade.
+House rules your whole flat agreed on: a chore rota with checklists, kind nudges, shared supplies, and a check-in so rules don't quietly fade.
 
 Built for *GUI Design & Web Optimization*, Cycle 1 (personal product), domain: shared housing.
 
@@ -16,12 +16,16 @@ Research for this project (two interviews plus desk research) found that in shar
 
 Design goal: help flatmates who live together for only a few months find house rules that work for both sides and stick to them, so disagreements are settled before they escalate.
 
+Version 3 is based on testing v2 with classmates: see [TESTING.md](TESTING.md) for the notes and what changed.
+
 ## What it does
 
-- **This week:** the chore rota, who is on what, and a tick when it's done. "What counts as done" spells out the standard, and "Done this month" makes it visible who does the work.
+- **This week:** the chore rota, rotating every Monday. Each chore is a checklist, so everyone sees which steps are still missing. A reminder shows while your own chore is open, a done chore can be undone, "Done this month" shows who does the work, and **Past weeks** shows the last three weeks.
 - **Something left out?** Send one flatmate a friendly nudge about a pan in the sink, full bins or the cooker hood. The suggested wording points to the rule the flat agreed on, so it's about the rule, not the person.
-- **House rules:** a rule only counts when everyone says OK. Flatmates can say OK, suggest a tweak (a middle ground) or say no with a reason.
+- **Supplies:** add what's running low (toilet paper, sponges); the first person who buys it ticks it off for everyone.
+- **House rules:** a rule only counts when all four flatmates say OK. A "no" (with a reason) or a tweak puts it in revision until everyone agrees on a middle ground. Your own proposals can be withdrawn, and every rule has named comments.
 - **Check-in:** every new rule gets a two-week trial, then the flat votes to keep, change or drop it.
+- **Joining:** Flat → Invite a flatmate shows a QR code. A new flatmate goes through each house rule and says OK or asks about it before moving in.
 
 It's a static prototype: the flatmates are invented, their replies and votes are simulated after a few seconds, and everything is saved only in your own browser (localStorage). **Flat > Reset the demo** starts over.
 
