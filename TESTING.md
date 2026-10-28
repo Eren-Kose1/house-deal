@@ -9,19 +9,23 @@
 Written down during the demos; only capitalisation and spelling were tidied.
 
 **Live demo 1**
+
 - Undone button
 - Login page with a QR, so people can join the apartment group
 - Cancel proposed ideas
 
 **Live demo 2**
+
 - Send notification when you not complete a task
 
 **Live demo 3**
+
 - The ability to create a simple task like buying toilet paper or kitchen sponge, and when a person clicks done it gets completed, because one person buying is enough
 - Add a sublist for every check, so if it's not done you can see it in the app
 - Be able to see past weeks' checklist
 
 **Live demo 4**
+
 - Chat system
 - Under each rule there could be an anonymous chat system: when a person doesn't follow the rule, you can write a note or message under the post
 - Unless four people agree, a rule or task isn't completed. Even if one person disagrees or wants a tweak, the rule is open for "revision", where people have to find the middle ground
